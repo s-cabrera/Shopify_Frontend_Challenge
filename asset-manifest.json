@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/Shopify_Frontend_Challenge/static/css/main.cd3a533c.css",
-    "main.js": "/Shopify_Frontend_Challenge/static/js/main.ba64a91c.js",
+    "main.css": "/Shopify_Frontend_Challenge/static/css/main.5fe78a65.css",
+    "main.js": "/Shopify_Frontend_Challenge/static/js/main.c9918c08.js",
     "static/js/787.6c256fe0.chunk.js": "/Shopify_Frontend_Challenge/static/js/787.6c256fe0.chunk.js",
-    "static/media/dark_background.jpg": "/Shopify_Frontend_Challenge/static/media/dark_background.3a338702fb9706d20498.jpg",
     "index.html": "/Shopify_Frontend_Challenge/index.html",
-    "main.cd3a533c.css.map": "/Shopify_Frontend_Challenge/static/css/main.cd3a533c.css.map",
-    "main.ba64a91c.js.map": "/Shopify_Frontend_Challenge/static/js/main.ba64a91c.js.map",
+    "main.5fe78a65.css.map": "/Shopify_Frontend_Challenge/static/css/main.5fe78a65.css.map",
+    "main.c9918c08.js.map": "/Shopify_Frontend_Challenge/static/js/main.c9918c08.js.map",
     "787.6c256fe0.chunk.js.map": "/Shopify_Frontend_Challenge/static/js/787.6c256fe0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd3a533c.css",
-    "static/js/main.ba64a91c.js"
+    "static/css/main.5fe78a65.css",
+    "static/js/main.c9918c08.js"
   ]
 }
