@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+.heading {
+  background: #21B5FF;
+  background: -webkit-linear-gradient(to right, #21B5FF 0%, #BD1BCF 95%);
+  background: -moz-linear-gradient(to right, #21B5FF 0%, #BD1BCF 95%);
+  background: linear-gradient(to right, #21B5FF 0%, #BD1BCF 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.heart:hover{
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
