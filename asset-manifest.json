@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Shopify_Frontend_Challenge/static/css/main.073c9b0a.css",
-    "main.js": "/Shopify_Frontend_Challenge/static/js/main.d334604d.js",
+    "main.css": "/Shopify_Frontend_Challenge/static/css/main.cd3a533c.css",
+    "main.js": "/Shopify_Frontend_Challenge/static/js/main.8af7b675.js",
     "static/js/787.6c256fe0.chunk.js": "/Shopify_Frontend_Challenge/static/js/787.6c256fe0.chunk.js",
-    "static/media/logo.svg": "/Shopify_Frontend_Challenge/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/dark_background.jpg": "/Shopify_Frontend_Challenge/static/media/dark_background.3a338702fb9706d20498.jpg",
     "index.html": "/Shopify_Frontend_Challenge/index.html",
-    "main.073c9b0a.css.map": "/Shopify_Frontend_Challenge/static/css/main.073c9b0a.css.map",
-    "main.d334604d.js.map": "/Shopify_Frontend_Challenge/static/js/main.d334604d.js.map",
+    "main.cd3a533c.css.map": "/Shopify_Frontend_Challenge/static/css/main.cd3a533c.css.map",
+    "main.8af7b675.js.map": "/Shopify_Frontend_Challenge/static/js/main.8af7b675.js.map",
     "787.6c256fe0.chunk.js.map": "/Shopify_Frontend_Challenge/static/js/787.6c256fe0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.d334604d.js"
+    "static/css/main.cd3a533c.css",
+    "static/js/main.8af7b675.js"
   ]
 }
