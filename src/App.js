@@ -1,18 +1,19 @@
 import './App.css';
 import * as React from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
-import Gallery from './components/Gallery';
-import Header from './components/Header';
+import PageContainer from './components/PageContainer';
+
+//Chakra UI Components
+import {
+  ChakraProvider,
+  theme,
+} from '@chakra-ui/react';
+
 
 function App() {
   return (
-    
-    <div className="App">
-    <ChakraProvider>
-      <Header />
-      <Gallery/>
+    <ChakraProvider theme={theme} minHeight="vh100">
+      <PageContainer/>
     </ChakraProvider>  
-    </div>
 
   )
 }

@@ -4,41 +4,101 @@ import React from "react"
 //Chakra UI
 import {
     Flex,
-    InputGroup,
-    InputLeftAddon,
-    Input,
-    InputRightElement,
+    Input,    
     Heading,
     Button,
     Spinner,
-    Spacer
+    Spacer,
+    InputGroup,
+    InputLeftAddon,
+    InputRightAddon,
+    useColorMode,
+    useColorModeValue,
+    
 } from "@chakra-ui/react"
 
-import { SearchIcon } from '@chakra-ui/icons'
+import { SearchIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
 
-function Header() {
-    const [show, setShow] = React.useState(false)
-    const handleClick = () => setShow(!show)
+function Header({setSearch, show, setShow}) {
+    
+    //Input value on change
+    const [input, setInput] = React.useState('');
 
+    //Is Loading switch
+    const handleSubmit = () => {
+        setShow(!show)
+        setSearch(input)
+        setInput('');
+    }
+
+
+    const { colorMode, toggleColorMode } = useColorMode();
     return (
         <>
-            <Flex p={5} borderBottom={'2px solid'} borderColor={'gray.700'}>
+            <Flex 
+                p={5} 
+                borderBottom={'2px solid'} 
+                borderColor={useColorModeValue('gray.300', 'gray.700')}
+                align={{
+                    base: 'center'
+                }} 
+                direction={{
+                    base: 'column',
+                    md: 'row'
+                }}
+            >
                 <Heading class="heading" size='2xl'>NASA-Gram</Heading>
-                <Spacer/>
-                <InputGroup width={'30%'}>
+                <Spacer />
+                <InputGroup 
+                    width={{
+                        base: '80%', 
+                        md: '45%',
+                        lg: '30%'
+                    }} 
+                    alignItems={'center'}
+                >
                     <InputLeftAddon children={<SearchIcon />} />
-                    <Input type='tel' placeholder='Look up a NASA title' />
-                    <InputRightElement width='4.5rem'>
+                    <Input 
+                        type='text' 
+                        placeholder='Look up a NASA title' 
+                        onChange={(e)=> {setInput(e.target.value)}}
+                        value={input}
+                        />
+                    <InputRightAddon width='4.5rem' p={1}
+                        children=                        
                         {show ?
-                            <Button isLoading h='1.75rem' size='sm'>
+                            <Button 
+                                isLoading  
+                                variant={'ghost'}
+                                width={'100%'}
+
+                            >
                                 <Spinner />
                             </Button>
                             :
-                            <Button h='1.75rem' size='sm' onClick={handleClick}>Submit</Button>
+                            <Button 
+                                variant={'ghost'} 
+                                width={'100%'}
+                                onClick={handleSubmit}
+                            >
+                                Submit
+                            </Button>
                         }
-
-                    </InputRightElement>
+                    />
                 </InputGroup>
+                <Button
+                    onClick={toggleColorMode}
+                    h="full"
+                    m={3}
+                    aria-label="Dark/Light Theme Toggle Button"
+                    w={{ 
+                        base: '80%', 
+                        md: 'fit-content' 
+                    }}
+                    py={2}
+                >
+                    {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                </Button>
             </Flex>
 
         </>

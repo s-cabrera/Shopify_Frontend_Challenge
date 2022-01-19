@@ -5,12 +5,13 @@ import React from "react"
 import {
     Box,
     Text,
+    Icon,
     Stack,
     Spacer,
     Spinner,
-    // Button,
     useColorModeValue
 } from "@chakra-ui/react"
+
 
 //Font Awesome Icons and Components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -43,13 +44,18 @@ function Card() {
             <Box
                 px={2}
             >
-                <Box py={1} my={2} background={'gray.600'} borderRadius={5}>
+                <Box 
+                    py={1} 
+                    my={2} 
+                    background={useColorModeValue('gray.300','gray.600')} 
+                    borderRadius={5}
+                >
                     <Text
                         align="right"
                         p={1}
                         fontSize='md'
                         fontWeight={'bold'}
-                        color={'blackAlpha.700'}
+                        color={useColorModeValue('blackAlpha.500', 'blackAlpha.700')}
                     >
                         01/18/2022
                     </Text>
@@ -70,20 +76,20 @@ function Card() {
                     <Text
                         fontSize={'2xl'}
                         fontWeight={'semibold'}
-                        color={'gray.300'}
+                        color={useColorModeValue('gray.500', 'gray.300')}
                     >
                         Dark Sky
                     </Text>
                     <Spacer />
-                    <Text fontSize={'2xl'} color={ like ? 'red.400': 'gray.500'}>
+                    <Icon w={8} h={8} color={ like ? 'red.400': 'gray.500'}>
                         <FontAwesomeIcon 
-                            size="lg"
+                            size="sm"
                             icon={faHeart} 
                             class="heart"
                             alt="Like/Unlike button" 
                             onClick={changeLikeStatus} 
                         />
-                    </Text>
+                    </Icon>
                 </Stack>
             </Box>
         </Box >
