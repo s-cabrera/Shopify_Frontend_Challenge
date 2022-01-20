@@ -18,7 +18,7 @@ Tester API
 https://api.github.com/users/${search}/repos
 */
 
-function Gallery({search, setShow}) {
+function Gallery(/*{search, setShow}*/) {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
@@ -30,7 +30,7 @@ function Gallery({search, setShow}) {
                 (result) => {
                     setIsLoaded(true);
                     setItems(result);
-                    setShow(false);
+                    // setShow(false);
                     console.log(result)
                     console.log(localStorage)
                 },
@@ -40,10 +40,10 @@ function Gallery({search, setShow}) {
                 (error) => {
                     setIsLoaded(true);
                     setError(error);
-                    setShow(false);
+                    // setShow(false);
                 }
             )
-    }, [search, setShow])
+    }, [])
 
     if (error) {
         return <Text p={3}>Error: {error.message}</Text>;

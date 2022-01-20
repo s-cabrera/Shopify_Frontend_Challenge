@@ -4,32 +4,42 @@ import React from "react"
 //Chakra UI
 import {
     Flex,
-    Input,    
+    // Input,    
     Heading,
     Button,
-    Spinner,
+    // Spinner,
     Spacer,
-    InputGroup,
-    InputLeftAddon,
-    InputRightAddon,
+    // InputGroup,
+    // InputLeftAddon,
+    // InputRightAddon,
     useColorMode,
     useColorModeValue,
     
 } from "@chakra-ui/react"
 
-import { SearchIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { 
+    // SearchIcon, 
+    MoonIcon, 
+    SunIcon } 
+from '@chakra-ui/icons'
 
-function Header({setSearch, show, setShow}) {
+function Header(
+// {
+    // setSearch, 
+    // show, 
+    // setShow
+// }
+) {
     
     //Input value on change
-    const [input, setInput] = React.useState('');
+    // const [input, setInput] = React.useState('');
 
     //Is Loading switch
-    const handleSubmit = () => {
-        setShow(!show)
-        setSearch(input)
-        setInput('');
-    }
+    // const handleSubmit = () => {
+    //     setShow(!show)
+    //     setSearch(input)
+    //     setInput('');
+    // }
 
 
     const { colorMode, toggleColorMode } = useColorMode();
@@ -49,7 +59,8 @@ function Header({setSearch, show, setShow}) {
             >
                 <Heading className="heading" size='2xl'>NASA-Gram</Heading>
                 <Spacer />
-                <InputGroup 
+                {/* Potential Search bar for future version */}
+                {/* <InputGroup 
                     width={{
                         base: '80%', 
                         md: '45%',
@@ -85,7 +96,7 @@ function Header({setSearch, show, setShow}) {
                             </Button>
                         }
                     />
-                </InputGroup>
+                </InputGroup> */}
                 <Button
                     onClick={toggleColorMode}
                     h="full"
