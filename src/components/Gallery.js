@@ -24,7 +24,7 @@ function Gallery({search, setShow}) {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=50`)
+        fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=60`)
             .then(res => res.json())
             .then(
                 (result) => {
