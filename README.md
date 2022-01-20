@@ -29,14 +29,18 @@
 
 
 ## About the Project
-<!-- [![Anime-Q Demo][demo]](https://anime-q-list.herokuapp.com/) -->
+This repository hosts the code for the Frontend Developer Challenge for the Summer 2022 Internship Program with Shopify. 
 
-This repository hosts the code for the Frontend Developer Challenge for the Summer 2022 Internship Program with Shopify
+[![Shopify Frontend Developer Intern Challenge Demo][demo]](https://s-cabrera.github.io/Shopify_Frontend_Challenge/)
+
+It has a loading state and updates/saves likes in the local storage. 
+
+[![Console Log of Local Storage w/ saved Likes][devtools]](https://s-cabrera.github.io/Shopify_Frontend_Challenge/)
 
 <!-- Technologies used in app -->
 ### Built With
 * [React](https://reactjs.org/)
-* [Polaris](https://polaris.shopify.com/)
+* [Chakra UI](https://chakra-ui.com/)
 * [NASA's Astronomy Picture of the Day API](https://github.com/nasa/apod-api#docs)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -81,7 +85,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Acknowledgements
 
-* [dotenv](https://www.npmjs.com/package/dotenv)
+* [React Lazy Load Image Component](https://www.npmjs.com/package/react-lazy-load-image-component)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -91,5 +95,5 @@ If you have any questions about the repo, open an issue or contact me directly a
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- [demo]: Anime-Q.gif
-[jawsDB]: jawsDB.PNG -->
+[demo]: shopify_frontend_dev_challenge_demo.JPG
+[devtools]: demo_devtools.JPG 

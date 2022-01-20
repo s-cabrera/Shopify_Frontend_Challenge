@@ -47,7 +47,7 @@ function Header({setSearch, show, setShow}) {
                     md: 'row'
                 }}
             >
-                <Heading class="heading" size='2xl'>NASA-Gram</Heading>
+                <Heading className="heading" size='2xl'>NASA-Gram</Heading>
                 <Spacer />
                 <InputGroup 
                     width={{
